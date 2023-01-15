@@ -1,0 +1,18 @@
+[package]
+name = "enginessh-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "enginessh"
+path = "src/lib.rs"
+
+[[bin]]
+name = "engine"
+path = "src/bin.rs"
+
+[dependencies]
+ssh2 = "0.9.3"
+yaml-rust = "0.4.5"
